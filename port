@@ -122,3 +122,13 @@ echo ""
 success "SSH 端口已成功修改为 ${NEW_PORT}"
 warn "请不要关闭当前终端！先用新端口测试登录，确认能连上再退出。"
 warn "如无法登录，请通过 VNC/控制台恢复备份：cp ${BACKUP} ${CONFIG} && systemctl restart sshd"
+# ---------- 后续调用提示 ----------
+
+echo ""
+info "========== 后续使用方法 =========="
+echo "以后需要再次运行 SSH 端口修改工具时，请输入："
+echo -e "  ${GREEN}sudo port${NC}"
+echo ""
+echo "如果命令无法识别，可以使用完整路径："
+echo -e "  ${GREEN}sudo /usr/local/bin/port${NC}"
+echo ""
