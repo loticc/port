@@ -125,10 +125,10 @@ warn "如无法登录，请通过 VNC/控制台恢复备份：cp ${BACKUP} ${CON
 # ---------- 后续调用提示 ----------
 
 echo ""
-info "========== 后续使用方法 =========="
-echo "以后需要再次运行 SSH 端口修改工具时，请输入："
+info "========== 后续调用方法 =========="
+echo "端口修改完成。下次需要再次运行本工具，请输入："
 echo -e "  ${GREEN}sudo port${NC}"
 echo ""
-echo "如果命令无法识别，可以使用完整路径："
+echo "如果命令无法识别，请使用完整路径："
 echo -e "  ${GREEN}sudo /usr/local/bin/port${NC}"
 echo ""
