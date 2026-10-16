@@ -44,7 +44,7 @@
 在 VPS 的 SSH 终端中执行以下命令。
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/loticc/port/main/install.sh -o /tmp/port-install.sh && sudo bash /tmp/port-install.sh
+bash <(wget -qO- https://raw.githubusercontent.com/loticc/port/main/install.sh 2>/dev/null || curl -fsSL https://raw.githubusercontent.com/loticc/port/main/install.sh)
 ```
 
 一键安装命令不包含中文，安装过程中的说明则使用中文显示。
